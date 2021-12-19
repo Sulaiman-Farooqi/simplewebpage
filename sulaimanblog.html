@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        border: none;
+        font-size: 100%;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    body{
+        background: rgb(52, 52, 71);
+    }
+    .navbar{
+        display: flex;
+    }
+    .navlist {
+        display: flex;
+        
+        margin-top: 50px;
+        margin-left: 150px;
+    }
+    .logo{
+        margin-right: 35px;
+        
+    }
+    .logo img{
+        border-radius: 150px;
+        width: 100px;
+        height: 100px;
+        margin: 12px 10px;
+    }
+    .navlist li {
+        list-style: none;
+        position: relative;
+    }
+    
+    .navlist li a {
+        text-decoration: none;
+        font-size: larger;
+        color: gray;
+        padding: 22px;
+        transition: 0.5s ease;
+    }
+
+    
+    .navlist li a:hover{
+        background: rgb(110, 110, 170);
+        border: 1px solid black;
+        border-radius: 5px;
+
+
+    }
+    .content{
+      text-align: center;
+      margin-top: 300px;
+      
+    }
+    .head{
+        font-weight: bold;
+        font-size: 100px;
+        margin-left: -500px;
+    }
+    button{
+        border: 1px solid black;
+        padding: 5px;
+        background: transparent;
+        margin-top: 10px;
+        position: relative;
+        color: #fff;
+        cursor: pointer;
+        overflow: hidden;
+        border-radius: 10px;
+
+     
+
+    }
+    span{
+        width: 0%;
+        height: 100%;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        background:rgb(98, 98, 141);
+        border-radius:10px;
+        z-index: -1;
+        transition: 0.5s;
+    }
+    button:hover span{
+        width:100%;
+    }
+    button:hover{
+        border: none;
+    }
+   
+
+
+</style>
+    <body>
+        <nav class="navbar">
+            <div class="logo">
+                <img onclick="hide()" src="_mr__farooqi__20200109_195428_0-01.png">
+
+            </div>
+            <ul id="navlist" class="navlist">
+                <li class="item"> <a href="#about">ABOUT</a></li>
+                <li class="item"> <a href="#email">EMAIL</a></li>
+                <li class="item"> <a href="#contact us">CONTACT US</a></li>
+                <li class="item"> <a href="#more">MORE</a></li>
+               
+            </ul>
+
+
+
+
+
+
+        </nav>
+        <div class="content">
+            <h1 class="head">WEB DESIGNER</h1>
+            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. A fuga ratione praesentium dolorum dolores explicabo saepe ab unde similique vero incidunt, itaque consequuntur at nihil modi asperiores delectus porro sequi?</p>
+            <button type="button"><span></span>subscribe now</button>
+            <button type="button"><span></span> contact</button>
+       
+
+        <script>
+            let navlist = document.getElementById('navlist')
+
+            const hide = ()=>{
+              navlist.classList.toggle('navlist')
+
+            }
+
+            
+        </script>
+</body>
+
+</html>
